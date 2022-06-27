@@ -14,17 +14,17 @@ import Favorite from "@mui/icons-material/Favorite";
 import Checkbox from "@mui/material/Checkbox";
 import FavoriteBorder from "@mui/icons-material/FavoriteBorder";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-import Item1 from "./images/item-1.jpeg";
 import {data} from './data';
-console.log(data)
+
 
 
 const Post = () => {
 
 return (
   <Box>
-    {data.map((item) =>{
+    {data.map((item, index) =>{
         return(
+
     <Card sx={{ maxWidth: 745, margin: "0 auto" }}>
       <CardHeader
         avatar={
@@ -40,12 +40,10 @@ return (
         title={item.title}
         subheader={item.date}
       />
-      <CardMedia component="img" height="294" src={item.image} alt="Paella dish" />
+      <CardMedia component="img" height="399" src={item.image} alt="Paella dish" />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
-          This impressive paella is a perfect party dish and a fun meal to cook
-          together with your guests. Add 1 cup of frozen peas along with the
-          mussels, if you like.
+          {item.description}
         </Typography>
       </CardContent>
       <CardActions disableSpacing>

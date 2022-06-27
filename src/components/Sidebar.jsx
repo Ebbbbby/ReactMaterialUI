@@ -20,67 +20,69 @@ const Sidebar = () => {
       bgcolor={"#ECECEC"}
       flex={1}
       p={2}
-      sx={{ display: { xs: "none", sm: "block" } }}
-    >
-      <List>
-        <ListItem disablePadding>
-          <ListItemButton component="a" href="#home">
-            <ListItemIcon>
-              <HomeIcon />
-            </ListItemIcon>
-            <ListItemText primary="HomePage" />
-          </ListItemButton>
-        </ListItem>
+      sx={{ display: { xs: "none", sm: "block"} }}>
+      <Box sx= {{position:"fixed"}}>
 
-        <ListItem disablePadding>
-          <ListItemButton component="a" href="#Pages">
-            <ListItemIcon>
-              <AutoStoriesIcon />
-            </ListItemIcon>
-            <ListItemText primary="pages" />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton component="a" href="#groups">
-            <ListItemIcon>
-              <GroupIcon />
-            </ListItemIcon>
-            <ListItemText primary="Groups" />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton component="a" href="#marketplace">
-            <ListItemIcon>
-              <StorefrontIcon />
-            </ListItemIcon>
-            <ListItemText primary="Marketplace" />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton component="a" href="#friends">
-            <ListItemIcon>
-              <PeopleTwoToneIcon />
-            </ListItemIcon>
-            <ListItemText primary="Friends" />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton component="a" href="#profile">
-            <ListItemIcon>
-              <AccountBoxIcon />
-            </ListItemIcon>
-            <ListItemText primary="Profile" />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton component="a" href="#profile">
-            <ListItemIcon>
-              <ModeNightIcon />
-            </ListItemIcon>
-            <Switch />
-          </ListItemButton>
-        </ListItem>
-      </List>
+        <List>
+          <ListItem disablePadding>
+            <ListItemButton component="a" href="#home">
+              <ListItemIcon>
+                <HomeIcon />
+              </ListItemIcon>
+              <ListItemText primary="HomePage" />
+            </ListItemButton>
+          </ListItem>
+
+          <ListItem disablePadding>
+            <ListItemButton component="a" href="#Pages">
+              <ListItemIcon>
+                <AutoStoriesIcon />
+              </ListItemIcon>
+              <ListItemText primary="pages" />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton component="a" href="#groups">
+              <ListItemIcon>
+                <GroupIcon />
+              </ListItemIcon>
+              <ListItemText primary="Groups" />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton component="a" href="#marketplace">
+              <ListItemIcon>
+                <StorefrontIcon />
+              </ListItemIcon>
+              <ListItemText primary="Marketplace" />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton component="a" href="#friends">
+              <ListItemIcon>
+                <PeopleTwoToneIcon />
+              </ListItemIcon>
+              <ListItemText primary="Friends" />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton component="a" href="#profile">
+              <ListItemIcon>
+                <AccountBoxIcon />
+              </ListItemIcon>
+              <ListItemText primary="Profile" />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton component="a" href="#profile">
+              <ListItemIcon>
+                <ModeNightIcon />
+              </ListItemIcon>
+              <Switch />
+            </ListItemButton>
+          </ListItem>
+        </List>
+      </Box>
     </Box>
   );
 }
