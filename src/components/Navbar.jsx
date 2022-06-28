@@ -41,12 +41,14 @@ const UserBox = styled(Box)(({ theme }) => ({
 const Navbar = () => {
   const [open , setOpen]= useState(false)
   return (
-    <AppBar position="sticky">
+    <AppBar position="sticky" sx={{ bgcolor: "	#616161" }}>
       <StyledToolBar>
         <Typography variant="h6" sx={{ display: { xs: "none", sm: "block" } }}>
           FOODIe.
         </Typography>
-        <FastfoodIcon sx={{ display: { xs: "block", sm: "none",color: "orange"} }} />
+        <FastfoodIcon
+          sx={{ display: { xs: "block", sm: "none", color: "orange" } }}
+        />
         <Search>
           <InputBase placeholder="search..." />
         </Search>

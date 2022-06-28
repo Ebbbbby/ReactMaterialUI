@@ -1,4 +1,5 @@
 import React from "react";
+import {Box}from '@mui/material'
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageList from "@mui/material/ImageList";
 import {itemData} from './itemData';
@@ -7,7 +8,8 @@ console.log(itemData)
 
 const ImageGallery = () => {
   return (
-      <ImageList>
+    <Box>
+      <ImageList sx={{width:350, height:100}} cols={3} rowHeight={100}>
         {itemData.map((item) => {
           return (
             <ImageListItem key={item.img}>
@@ -18,14 +20,12 @@ const ImageGallery = () => {
                 loading="lazy"
               />
             </ImageListItem>
-
           );
         })}
       </ImageList>
-
-
+    </Box>
   );
- 
+
 };
 
 export default ImageGallery;

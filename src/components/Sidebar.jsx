@@ -17,17 +17,17 @@ import ModeNightIcon from '@mui/icons-material/ModeNight';
 const Sidebar = () => {
   return (
     <Box
-      bgcolor={"#ECECEC"}
+      bgcolor={"#FF5F1F"}
       flex={1}
       p={2}
-      sx={{ display: { xs: "none", sm: "block"} }}>
-      <Box sx= {{position:"fixed"}}>
-
+      sx={{ display: { xs: "none", sm: "block" }, padding: "0 20px 0 20px" }}
+    >
+      <Box sx={{ position: "fixed" }}>
         <List>
           <ListItem disablePadding>
             <ListItemButton component="a" href="#home">
               <ListItemIcon>
-                <HomeIcon />
+                <HomeIcon sx={{ color: "#fff" }} />
               </ListItemIcon>
               <ListItemText primary="HomePage" />
             </ListItemButton>
@@ -36,7 +36,7 @@ const Sidebar = () => {
           <ListItem disablePadding>
             <ListItemButton component="a" href="#Pages">
               <ListItemIcon>
-                <AutoStoriesIcon />
+                <AutoStoriesIcon sx={{ color: "#fff" }} />
               </ListItemIcon>
               <ListItemText primary="pages" />
             </ListItemButton>
@@ -44,7 +44,7 @@ const Sidebar = () => {
           <ListItem disablePadding>
             <ListItemButton component="a" href="#groups">
               <ListItemIcon>
-                <GroupIcon />
+                <GroupIcon sx={{ color: "#fff" }} />
               </ListItemIcon>
               <ListItemText primary="Groups" />
             </ListItemButton>
@@ -52,7 +52,7 @@ const Sidebar = () => {
           <ListItem disablePadding>
             <ListItemButton component="a" href="#marketplace">
               <ListItemIcon>
-                <StorefrontIcon />
+                <StorefrontIcon sx={{ color: "#fff" }} />
               </ListItemIcon>
               <ListItemText primary="Marketplace" />
             </ListItemButton>
@@ -60,7 +60,7 @@ const Sidebar = () => {
           <ListItem disablePadding>
             <ListItemButton component="a" href="#friends">
               <ListItemIcon>
-                <PeopleTwoToneIcon />
+                <PeopleTwoToneIcon sx={{ color: "#fff" }} />
               </ListItemIcon>
               <ListItemText primary="Friends" />
             </ListItemButton>
@@ -68,7 +68,7 @@ const Sidebar = () => {
           <ListItem disablePadding>
             <ListItemButton component="a" href="#profile">
               <ListItemIcon>
-                <AccountBoxIcon />
+                <AccountBoxIcon sx={{ color: "#fff" }} />
               </ListItemIcon>
               <ListItemText primary="Profile" />
             </ListItemButton>
@@ -76,7 +76,7 @@ const Sidebar = () => {
           <ListItem disablePadding>
             <ListItemButton component="a" href="#profile">
               <ListItemIcon>
-                <ModeNightIcon />
+                <ModeNightIcon sx={{ color: "#fff" }} />
               </ListItemIcon>
               <Switch />
             </ListItemButton>
