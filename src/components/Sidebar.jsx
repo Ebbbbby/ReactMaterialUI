@@ -14,7 +14,7 @@ import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import Switch from "@mui/material/Switch";
 import ModeNightIcon from '@mui/icons-material/ModeNight';
 
-const Sidebar = () => {
+const Sidebar = ({mode, setMode}) => {
   return (
     <Box
       bgcolor={"#FF5F1F"}
@@ -78,7 +78,7 @@ const Sidebar = () => {
               <ListItemIcon>
                 <ModeNightIcon sx={{ color: "#fff" }} />
               </ListItemIcon>
-              <Switch />
+              <Switch onChange={e=>setMode(mode=="light"? "dark":"light")} />
             </ListItemButton>
           </ListItem>
         </List>
